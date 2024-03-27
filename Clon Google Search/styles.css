@@ -20,10 +20,13 @@ header .options{
     gap: 12px; 
 }
 header .options a{
-    font-family: Arial,  sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: small;
     text-decoration: none;
     color: #202124; 
+}
+header .options a:hover{
+    text-decoration: underline;
 }
 header .options a img{
     height: 25px;
@@ -43,6 +46,7 @@ header .options a img{
     height:20px; 
     background-image: url(assets/search.svg);
     background-size: cover;
+    opacity: 0.5;
     
 
 
@@ -91,7 +95,7 @@ main .container .searcher {
     height: 50px;
     width: 500px;
     padding: 8px 12px;
-    border: 1px solid gray;
+    border: 1px solid rgb(202, 202, 202);
     border-radius: 25px;
 }
 main .container .searcher button{
@@ -126,7 +130,14 @@ main .container input{
 
 main .container p{
    font-size: small;
-   font-family: Arial,  sans-serif;
+   font-family: Arial, Helvetica, sans-serif;
+}
+main .container p a{
+    color: rgb(2, 0, 128);
+}
+main .container p a:hover{
+    text-decoration: underline;
+
 }
 footer{
     width: 100%;
@@ -158,13 +169,15 @@ footer section.more-info div{
     gap: 12px; 
 
 }
-
 footer section.more-info div.info1{
+    width: 50%;
+}
+footer section.more-info div.info2{
     position: fixed;
     bottom: 20px;
     right: 20px;
     background-color: rgb(240, 238, 238);
-
+    width: 15%;
 } 
 footer section.more-info div a{
     font-family: Arial, sans-serif;
@@ -172,4 +185,7 @@ footer section.more-info div a{
     font-size: 14px;
     text-decoration: none;
     color: #202124;
+}
+footer section.more-info div a:hover{
+    text-decoration: underline;
 }
